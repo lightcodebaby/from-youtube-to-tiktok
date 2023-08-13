@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "from-youtube-to-tiktok"
+version = "0.1.0"
+description = "Youtube downloader and TikTok uploader"
+authors = ["Ruben Lopez Gomez <rubenlg94@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "from_youtube_to_tiktok"}, from = "src"]
+include = [path = "tests", format = "sdist"]
+repository = "https://github.com/rvbenlg/from-youtube-to-tiktok"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.30.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+isort = "*"
+pytests = "^7.2"
+pylint = "^2.17"
+pre-commit = "^2.21"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
